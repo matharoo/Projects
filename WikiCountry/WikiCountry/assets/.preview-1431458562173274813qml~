@@ -1,0 +1,47 @@
+// Default empty project template
+import bb.cascades 1.0
+
+// creates one page with a label
+Page {
+    Container {
+        background: Color.create("#00ffffff")
+        topPadding: 20
+        leftPadding: 40
+        rightPadding: 40
+        
+        Label {
+            text: "Country Wiki"
+            onCreationCompleted: {
+            }
+            textStyle.fontSize: FontSize.XLarge
+            textStyle.fontStyle: FontStyle.Italic
+            textStyle {
+                base: SystemDefaults.TextStyles.BodyText
+                color: Color.Black
+            }
+        }
+
+        ListView {
+            id: menus
+            dataModel: XmlDataModel {
+                id: xml_source
+                source: "model/list.xml"
+            }
+
+            listItemComponents: [
+                ListItemComponent {
+                    type: "menu"
+                    StandardListItem {
+                        title: ListItemData.country
+                    }
+                }
+            ]
+
+            onTriggered: {
+
+            }
+        }
+
+    }
+}
+

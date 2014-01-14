@@ -1,0 +1,1059 @@
+
+<root>
+  
+    <header key="A"/>
+    <country name="Afghanistan"/>
+  
+  
+    
+    <country name="Albania"/>
+  
+  
+    
+    <country name="Algeria"/>
+  
+  
+    
+    <country name="American Samoa"/>
+  
+  
+    
+    <country name="Andorra"/>
+  
+  
+    
+    <country name="Angola"/>
+  
+  
+    
+    <country name="Anguilla"/>
+  
+  
+    
+    <country name="Antarctica"/>
+  
+  
+    
+    <country name="Antigua and Barbuda"/>
+  
+  
+    
+    <country name="Argentina"/>
+  
+  
+    
+    <country name="Armenia"/>
+  
+  
+    
+    <country name="Aruba"/>
+  
+  
+    
+    <country name="Australia"/>
+  
+  
+    
+    <country name="Austria"/>
+  
+  
+    
+    <country name="Azerbaijan"/>
+  
+  	<header key="B"/>
+    
+    <country name="Bahamas"/>
+  
+  
+    
+    <country name="Bahrain"/>
+  
+  
+    
+    <country name="Bangladesh"/>
+  
+  
+    
+    <country name="Barbados"/>
+  
+  
+    
+    <country name="Belarus"/>
+  
+  
+    
+    <country name="Belgium"/>
+  
+  
+    
+    <country name="Belize"/>
+  
+  
+    
+    <country name="Benin"/>
+  
+  
+    
+    <country name="Bermuda"/>
+  
+  
+    
+    <country name="Bhutan"/>
+  
+  
+    
+    <country name="Bolivia"/>
+  
+  
+    
+    <country name="Bosnia and Herzegovina"/>
+  
+  
+    
+    <country name="Botswana"/>
+  
+  
+    
+    <country name="Bouvet Island"/>
+  
+  
+    
+    <country name="Brazil"/>
+  
+  
+    
+    <country name="British Antarctic Territory"/>
+  
+  
+    
+    <country name="British Indian Ocean Territory"/>
+  
+  
+    
+    <country name="British Virgin Islands"/>
+  
+  
+    
+    <country name="Brunei"/>
+  
+  
+    
+    <country name="Bulgaria"/>
+  
+  
+    
+    <country name="Burkina Faso"/>
+  
+  
+    
+    <country name="Burundi"/>
+  
+  	<header key="C"/>
+    
+    <country name="Cambodia"/>
+  
+  
+    
+    <country name="Cameroon"/>
+  
+  
+    
+    <country name="Canada"/>
+  
+  
+    
+    <country name="Canton and Enderbury Islands"/>
+  
+  
+    
+    <country name="Cape Verde"/>
+  
+  
+    
+    <country name="Cayman Islands"/>
+  
+  
+    
+    <country name="Central African Republic"/>
+  
+  
+    
+    <country name="Chad"/>
+  
+  
+    
+    <country name="Chile"/>
+  
+  
+    
+    <country name="China"/>
+  
+  
+    
+    <country name="Christmas Island"/>
+  
+  
+    
+    <country name="Cocos [Keeling] Islands"/>
+  
+  
+    
+    <country name="Colombia"/>
+  
+  
+    
+    <country name="Comoros"/>
+  
+  
+    
+    <country name="Congo - Brazzaville"/>
+  
+  
+    
+    <country name="Congo - Kinshasa"/>
+  
+  
+    
+    <country name="Cook Islands"/>
+  
+  
+    
+    <country name="Costa Rica"/>
+  
+  
+    
+    <country name="Croatia"/>
+  
+  
+    
+    <country name="Cuba"/>
+  
+  
+    
+    <country name="Cyprus"/>
+  
+  
+    
+    <country name="Czech Republic"/>
+  
+  
+    
+    <country name="Côte d’Ivoire"/>
+  
+  	<header key="D"/>
+    
+    <country name="Denmark"/>
+  
+  
+    
+    <country name="Djibouti"/>
+  
+  
+    
+    <country name="Dominica"/>
+  
+  
+    
+    <country name="Dominican Republic"/>
+  
+  
+    
+    <country name="Dronning Maud Land"/>
+  
+  
+    
+    <country name="East Germany"/>
+  
+  	<header key="E"/>
+    
+    <country name="Ecuador"/>
+  
+  
+    
+    <country name="Egypt"/>
+  
+  
+    
+    <country name="El Salvador"/>
+  
+  
+    
+    <country name="Equatorial Guinea"/>
+  
+  
+    
+    <country name="Eritrea"/>
+  
+  
+    
+    <country name="Estonia"/>
+  
+  
+    
+    <country name="Ethiopia"/>
+  
+  	<header key="F"/>
+    
+    <country name="Falkland Islands"/>
+  
+  
+    
+    <country name="Faroe Islands"/>
+  
+  
+    
+    <country name="Fiji"/>
+  
+  
+    
+    <country name="Finland"/>
+  
+  
+    
+    <country name="France"/>
+  
+  
+    
+    <country name="French Guiana"/>
+  
+  
+    
+    <country name="French Polynesia"/>
+  
+  
+    
+    <country name="French Southern Territories"/>
+  
+  
+    
+    <country name="French Southern and Antarctic Territories"/>
+  
+  	<header key="G"/>
+    
+    <country name="Gabon"/>
+  
+  
+    
+    <country name="Gambia"/>
+  
+  
+    
+    <country name="Georgia"/>
+  
+  
+    
+    <country name="Germany"/>
+  
+  
+    
+    <country name="Ghana"/>
+  
+  
+    
+    <country name="Gibraltar"/>
+  
+  
+    
+    <country name="Greece"/>
+  
+  
+    
+    <country name="Greenland"/>
+  
+  
+    
+    <country name="Grenada"/>
+  
+  
+    
+    <country name="Guadeloupe"/>
+  
+  
+    
+    <country name="Guam"/>
+  
+  
+    
+    <country name="Guatemala"/>
+  
+  
+    
+    <country name="Guernsey"/>
+  
+  
+    
+    <country name="Guinea"/>
+  
+  
+    
+    <country name="Guinea-Bissau"/>
+  
+  
+    
+    <country name="Guyana"/>
+  
+  	<header key="H"/>
+    
+    <country name="Haiti"/>
+  
+  
+    
+    <country name="Heard Island and McDonald Islands"/>
+  
+  
+    
+    <country name="Honduras"/>
+  
+  
+    
+    <country name="Hong Kong SAR China"/>
+  
+  
+    
+    <country name="Hungary"/>
+  
+ 	<header key="I"/>
+    
+    <country name="Iceland"/>
+  
+  
+    
+    <country name="India"/>
+  
+  
+    
+    <country name="Indonesia"/>
+  
+  
+    
+    <country name="Iran"/>
+  
+  
+    
+    <country name="Iraq"/>
+  
+  
+    
+    <country name="Ireland"/>
+  
+  
+    
+    <country name="Isle of Man"/>
+  
+  
+    
+    <country name="Israel"/>
+  
+  
+    
+    <country name="Italy"/>
+  
+  	<header key="J"/>
+    
+    <country name="Jamaica"/>
+  
+  
+    
+    <country name="Japan"/>
+  
+  
+    
+    <country name="Jersey"/>
+  
+  
+    
+    <country name="Johnston Island"/>
+  
+  
+    
+    <country name="Jordan"/>
+  
+ 	<header key="K"/>
+    
+    <country name="Kazakhstan"/>
+  
+  
+    
+    <country name="Kenya"/>
+  
+  
+    
+    <country name="Kiribati"/>
+  
+  
+    
+    <country name="Kuwait"/>
+  
+  
+    
+    <country name="Kyrgyzstan"/>
+  
+  	<header key="L"/>
+    
+    <country name="Laos"/>
+  
+  
+    
+    <country name="Latvia"/>
+  
+  
+    
+    <country name="Lebanon"/>
+  
+  
+    
+    <country name="Lesotho"/>
+  
+  
+    
+    <country name="Liberia"/>
+  
+  
+    
+    <country name="Libya"/>
+  
+  
+    
+    <country name="Liechtenstein"/>
+  
+  
+    
+    <country name="Lithuania"/>
+  
+  
+    
+    <country name="Luxembourg"/>
+  
+ 	 <header key="M"/>
+    
+    <country name="Macau SAR China"/>
+  
+  
+    
+    <country name="Macedonia"/>
+  
+  
+    
+    <country name="Madagascar"/>
+  
+  
+    
+    <country name="Malawi"/>
+  
+  
+    
+    <country name="Malaysia"/>
+  
+  
+    
+    <country name="Maldives"/>
+  
+  
+    
+    <country name="Mali"/>
+  
+  
+    
+    <country name="Malta"/>
+  
+  
+    
+    <country name="Marshall Islands"/>
+  
+  
+    
+    <country name="Martinique"/>
+  
+  
+    
+    <country name="Mauritania"/>
+  
+  
+    
+    <country name="Mauritius"/>
+  
+  
+    
+    <country name="Mayotte"/>
+  
+  
+    
+    <country name="Metropolitan France"/>
+  
+  
+    
+    <country name="Mexico"/>
+  
+  
+    
+    <country name="Micronesia"/>
+  
+  
+    
+    <country name="Midway Islands"/>
+  
+  
+    
+    <country name="Moldova"/>
+  
+  
+    
+    <country name="Monaco"/>
+  
+  
+    
+    <country name="Mongolia"/>
+  
+  
+    
+    <country name="Montenegro"/>
+  
+  
+    
+    <country name="Montserrat"/>
+  
+  
+    
+    <country name="Morocco"/>
+  
+  
+    
+    <country name="Mozambique"/>
+  
+  
+    
+    <country name="Myanmar [Burma]"/>
+  
+  	<header key="N"/>
+    
+    <country name="Namibia"/>
+  
+  
+    
+    <country name="Nauru"/>
+  
+  
+    
+    <country name="Nepal"/>
+  
+  
+    
+    <country name="Netherlands"/>
+  
+  
+    
+    <country name="Netherlands Antilles"/>
+  
+  
+    
+    <country name="Neutral Zone"/>
+  
+  
+    
+    <country name="New Caledonia"/>
+  
+  
+    
+    <country name="New Zealand"/>
+  
+  
+    
+    <country name="Nicaragua"/>
+  
+  
+    
+    <country name="Niger"/>
+  
+  
+    
+    <country name="Nigeria"/>
+  
+  
+    
+    <country name="Niue"/>
+  
+  
+    
+    <country name="Norfolk Island"/>
+  
+  
+    
+    <country name="North Korea"/>
+  
+  
+    
+    <country name="North Vietnam"/>
+  
+  
+    
+    <country name="Northern Mariana Islands"/>
+  
+  
+    
+    <country name="Norway"/>
+  
+  	<header key="O"/>
+    
+    <country name="Oman"/>
+  
+  	<header key="P"/>
+    
+    <country name="Pacific Islands Trust Territory"/>
+  
+  
+    
+    <country name="Pakistan"/>
+  
+  
+    
+    <country name="Palau"/>
+  
+  
+    
+    <country name="Palestinian Territories"/>
+  
+  
+    
+    <country name="Panama"/>
+  
+  
+    
+    <country name="Panama Canal Zone"/>
+  
+  
+    
+    <country name="Papua New Guinea"/>
+  
+  
+    
+    <country name="Paraguay"/>
+  
+  
+    
+    <country name="People's Democratic Republic of Yemen"/>
+  
+  
+    
+    <country name="Peru"/>
+  
+  
+    
+    <country name="Philippines"/>
+  
+  
+    
+    <country name="Pitcairn Islands"/>
+  
+  
+    
+    <country name="Poland"/>
+  
+  
+    
+    <country name="Portugal"/>
+  
+  
+    
+    <country name="Puerto Rico"/>
+  
+  	<header key="Q"/>
+    
+    <country name="Qatar"/>
+  
+  	<header key="R"/>
+    
+    <country name="Romania"/>
+  
+  
+    
+    <country name="Russia"/>
+  
+  
+    
+    <country name="Rwanda"/>
+  
+  
+    
+    <country name="Réunion"/>
+  
+  	<header key="S"/>
+    
+    <country name="Saint Barthélemy"/>
+  
+  
+    
+    <country name="Saint Helena"/>
+  
+  
+    
+    <country name="Saint Kitts and Nevis"/>
+  
+  
+    
+    <country name="Saint Lucia"/>
+  
+  
+    
+    <country name="Saint Martin"/>
+  
+  
+    
+    <country name="Saint Pierre and Miquelon"/>
+  
+  
+    
+    <country name="Saint Vincent and the Grenadines"/>
+  
+  
+    
+    <country name="Samoa"/>
+  
+  
+    
+    <country name="San Marino"/>
+  
+  
+    
+    <country name="Saudi Arabia"/>
+  
+  
+    
+    <country name="Senegal"/>
+  
+  
+    
+    <country name="Serbia"/>
+  
+  
+    
+    <country name="Serbia and Montenegro"/>
+  
+  
+    
+    <country name="Seychelles"/>
+  
+  
+    
+    <country name="Sierra Leone"/>
+  
+  
+    
+    <country name="Singapore"/>
+  
+  
+    
+    <country name="Slovakia"/>
+  
+  
+    
+    <country name="Slovenia"/>
+  
+  
+    
+    <country name="Solomon Islands"/>
+  
+  
+    
+    <country name="Somalia"/>
+  
+  
+    
+    <country name="South Africa"/>
+  
+  
+    
+    <country name="South Georgia and the South Sandwich Islands"/>
+  
+  
+    
+    <country name="South Korea"/>
+  
+  
+    
+    <country name="Spain"/>
+  
+  
+    
+    <country name="Sri Lanka"/>
+  
+  
+    
+    <country name="Sudan"/>
+  
+  
+    
+    <country name="Suriname"/>
+  
+  
+    
+    <country name="Svalbard and Jan Mayen"/>
+  
+  
+    
+    <country name="Swaziland"/>
+  
+  
+    
+    <country name="Sweden"/>
+  
+  
+    
+    <country name="Switzerland"/>
+  
+  
+    
+    <country name="Syria"/>
+  
+  
+    
+    <country name="São Tomé and Príncipe"/>
+  
+ 	<header key="T"/>
+    
+    <country name="Taiwan"/>
+  
+  
+    
+    <country name="Tajikistan"/>
+  
+  
+    
+    <country name="Tanzania"/>
+  
+  
+    
+    <country name="Thailand"/>
+  
+  
+    
+    <country name="Timor-Leste"/>
+  
+  
+    
+    <country name="Togo"/>
+  
+  
+    
+    <country name="Tokelau"/>
+  
+  
+    
+    <country name="Tonga"/>
+  
+  
+    
+    <country name="Trinidad and Tobago"/>
+  
+  
+    
+    <country name="Tunisia"/>
+  
+  
+    
+    <country name="Turkey"/>
+  
+  
+    
+    <country name="Turkmenistan"/>
+  
+  
+    
+    <country name="Turks and Caicos Islands"/>
+  
+  
+    
+    <country name="Tuvalu"/>
+  
+  	<header key="U"/>
+    
+    <country name="U.S. Minor Outlying Islands"/>
+  
+  
+    
+    <country name="U.S. Miscellaneous Pacific Islands"/>
+  
+  
+    
+    <country name="U.S. Virgin Islands"/>
+  
+  
+    
+    <country name="Uganda"/>
+  
+  
+    
+    <country name="Ukraine"/>
+  
+  
+    
+    <country name="Union of Soviet Socialist Republics"/>
+  
+  
+    
+    <country name="United Arab Emirates"/>
+  
+  
+    
+    <country name="United Kingdom"/>
+  
+  
+    
+    <country name="United States"/>
+  
+  
+    
+    <country name="Unknown or Invalid Region"/>
+  
+  
+    
+    <country name="Uruguay"/>
+  
+  
+    
+    <country name="Uzbekistan"/>
+  
+  	<header key="V"/>
+    
+    <country name="Vanuatu"/>
+  
+  
+    
+    <country name="Vatican City"/>
+  
+  
+    
+    <country name="Venezuela"/>
+  
+  
+    
+    <country name="Vietnam"/>
+  
+  	<header key="W"/>
+    
+    <country name="Wake Island"/>
+  
+  
+    
+    <country name="Wallis and Futuna"/>
+  
+  
+    
+    <country name="Western Sahara"/>
+  
+  	<header key="Y"/>
+    
+    <country name="Yemen"/>
+  
+  	<header key="Z"/>
+    
+    <country name="Zambia"/>
+  
+  
+    
+    <country name="Zimbabwe"/>
+  
+  
+    
+    <country name="Åland Islands"/>
+  
+</root>
