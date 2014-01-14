@@ -1,0 +1,153 @@
+/* Global Reset
+------------------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Clear Floated Elements
+------------------------------------------------------------------------------*/
+.clearfix:after, .sample#postnormal .text:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+body {
+  background: #eaeaea;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  -webkit-text-size-adjust: 100%; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+footer {
+  padding: 50px;
+  text-align: center; }
+  footer p {
+    color: #555;
+    font: 400 16px/1 "open sans";
+    margin: 0 0 2em 0; }
+    footer p a {
+      color: #555;
+      font-weight: 700; }
+      footer p a:hover {
+        color: #000; }
+.sample#title {
+  background: #fff;
+  padding: 125px 0 70px 0; }
+  .sample#title .text {
+    margin: 0 auto;
+    width: 800px; }
+  .sample#title h1 {
+    color: #000;
+    font: 800 64px/64px "open sans";
+    margin: 0 0 32px 0;
+    text-align: center;
+    text-transform: uppercase;}
+    .sample#title h1 span.kern {
+      margin: 0 0 0 -10px; }
+  .sample#title h2 {
+    color: #666;
+    margin: 0 0 32px 50px;
+    font: 800 30px/30px "gentium book basic";
+    font-style: italic;
+    text-transform: none;
+    text-align: center;
+    width: 650px; }
+    .sample#title h2 a:hover {
+      color: #222;
+      font-weight: 700; }
+  .sample#title p, .sample#title ul {
+    color: #666;
+    float: left;
+    font: 800 30px/30px "gentium book basic";
+    margin: 0 50px 0 0;
+    width: 800px; }
+  .sample#title ul {
+    margin: 0;
+    position: relative;
+    top: -2px;
+    width: 300px; }
+    .sample#title ul li {
+      font-size: 11px;
+      text-transform: uppercase; }
+      .sample#title ul li:before {
+        content: "\00d7";
+        font-size: 15px;
+        font-weight: 700;
+        left: -2px;
+        position: relative;
+        top: 2px; }
+      .sample#title ul li a:hover {
+        color: #222;
+        font-weight: 700; }
+.sample#herzog {
+  background: #2A2C39;
+  padding: 0px 0 0px; }
+  .sample#herzog .text {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 800px; }
+  .sample#herzog h2 {
+    color: #E9E9EB;
+    font: 100 40px "cardo";
+    font-style: italic;
+    margin: 0 0 20px 0;
+    text-align: left;
+    text-indent: -10px; }
+  .sample#herzog h3 {
+    color: #fff;
+    font: 400 36px/1.4 "cardo";
+    margin: 0 0 20px 0;
+    text-align: left;
+    text-indent: -32px; }
+    .sample#herzog h3 em {
+      font-style: italic; }
