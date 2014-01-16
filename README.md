@@ -8,7 +8,7 @@ It includes the following programs:
 + Python Script for plotting graphs using Matlab Pyplot<br>
 + Google Markup Application using PHP,MySQL, HTML5 and JavaScript<br>
 + BB10 Applications<br>
-+ and more...(I will keep updating it..)
++ and more...
 <br>
 <br>
 Cheers<br>
