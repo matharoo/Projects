@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SpaceShip Control on HTML5 Canvas</title>
+		<meta charset="utf-8">
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript">
+            /*
+            Author: Rupinder Singh Matharoo
+            Date: 29 September 2013
+            Description: Spaceship made with HTML5 on Canvas, 
+            Alien Sounds compiled with a software on MacOSX called DM1.
+            */
+            
+			$(document).ready(function() {
+				var canvas1;
+				var layer;
+                //collission sound
+                var snd = new Audio("sound_collide.wav"); 
+                
+                //background sound played in loop
+                var bgsound = new Audio("alien.mp3");
+                bgsound.loop = true;
+                bgsound.play();
+                
+				var dx = 5;
+				var dy = 5;
+				
+				var sx = 300;
+				var sy = 300;
+				var direction;
+                	//canvas dimensions
+                var W = window.innerWidth;
+                var H = window.innerHeight;
+				
+				//-------------------------------------------------
+				
+                var bgImage = new Image();
+                bgImage.src = "back.jpg";
+               
+                
+				function background(){
+                    //Displaying background image 
+                    layer.drawImage(bgImage,0,0);
+                    
+                /*Can also display gradient if want instead of displaying image
+                
+                    var grd=layer.createLinearGradient(0,0,0,500);
+                    grd.addColorStop(0,"black");
+                    grd.addColorStop(0.5,"#12183C");
+                    grd.addColorStop(0.75,"#4468A0");
+                    grd.addColorStop(1,"black");
+                    layer.fillStyle=grd;
+                    layer.fill();
+                    
+					//layer.fillStyle = "black";
+					layer.fillRect(0, 0, 700, 500);
+                    */
+                   
+				}
+
+			
+				//-------------------------------------------------
+				//Drawing the spaceship filled with gradients
+				function spaceship(sx, sy){
+                    layer.save();
+					layer.scale(.50,.50);
+					layer.translate(sx, sy);
+
+					layer.beginPath();
+                    
+                    layer.arc(300,150,100,0,2*Math.PI/2,true);
+                    layer.closePath();
+                    layer.stroke();
+                    var grd=layer.createLinearGradient(150,100,400,140);
+                    grd.addColorStop(0,"orange");
+                    grd.addColorStop(1,"green");
+                    layer.fillStyle=grd;
+                    layer.fill();
+                    
+                    layer.beginPath();
+                    layer.moveTo(122, 150);
+                    layer.quadraticCurveTo(270, 250, 480, 150);
+                    layer.lineWidth = 2;
+                    layer.closePath();
+                    layer.fillStyle = "grey";
+                    layer.stroke();
+                    layer.fill();
+                    
+                    //drawing the cricular lights on spaceship
+                    for(var i=0; i<=200; i=i+28)
+                    {
+                        layer.beginPath();
+                        layer.arc(200+i,165,10,0,2*Math.PI,false);
+                        layer.closePath();
+                        layer.stroke();
+                        var grd=layer.createLinearGradient(150,100,400,140);
+                        grd.addColorStop(0,"yellow");
+                        grd.addColorStop(1,"red");
+                        layer.fillStyle=grd;
+                        layer.fill();
+                    }
+                    
+                    layer.beginPath();
+                    layer.moveTo(122,150);
+                    layer.lineTo(479,150);
+                    layer.lineWidth = 2;
+                    layer.closePath();
+                    layer.stroke();
+                    
+					layer.restore();			
+				
+				}
+            
+
+				function initialize(){
+					canvas1 = $("#layer");
+					layer = canvas1.get(0).getContext("2d");
+					setInterval(draw, 10);
+				}
+				
+				//-------------------------------------------------
+				
+				function draw() {
+                    layer.clearRect(0, 0, W, H);
+					background();
+					doKeyDown();
+					spaceship(sx, sy);
+				}
+				
+                
+				//-------------------------------------------------
+				
+				function setDirection(evt){
+					direction = evt.keyCode;
+				}
+
+				//-------------------------------------------------
+
+                
+				function doKeyDown(){
+                    //
+						switch (direction) {
+						case 39:  // Right arrow was pressed
+                            bgsound.play();
+                            console.log("pressed right");
+                            if(sx<925){
+								sx += dx;
+                                }
+                                else{
+                                    snd.play();
+                                    sx = sx;
+                                    break;
+                                }
+							break;
+                        case 37:  // Left arrow was pressed
+                            bgsound.play();    
+                            if(sx>-120){
+					           sx -= dx;
+                                }
+                            else{
+                                snd.play();
+                                break;
+                            }
+                            break;
+                        case 40:  // down arrow was pressed
+                            bgsound.play();
+                            if(sy<800){
+					           sy += dy;
+                            }
+                            else{
+                                snd.play();
+                                break;
+                            }
+                            break;
+                        case 38:  // Up arrow was pressed
+                            bgsound.play();
+                            if(sy>-50){
+					           sy -= dy;
+                            }
+                            else{
+                                snd.play();
+                                break;
+                            }
+                            break;
+						}
+         
+				}
+            
+				//-------------------------------------------------
+				
+				initialize();
+				window.addEventListener('keydown',setDirection,true);
+                
+               
+			});
+				
+		</script>
+	</head>
+	<body>
+			<canvas  id="layer" width="700" height="500" style="border: 2px solid black; ">
+			</canvas>
+            
+	</body>
+</html>
