@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drawing Shapes, source-over effect in HTML5 Canvas- Rupinder Matharoo</title>
+</head>
+<body>
+
+<canvas id="myCanvas" width="800" height="800" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    var radius = 30;
+    function getMousePos(canvas, evt) {
+    var rect = canvas.getBoundingClientRect();
+    return {
+      x: evt.clientX - rect.left,
+      y: evt.clientY - rect.top
+    };
+    }
+    
+    canvas.addEventListener('mousemove', function(evt) {
+    var mousePos = getMousePos(canvas, evt);
+    var message =  mousePos.x + ',' + mousePos.y;     
+    document.getElementById("message").innerHTML="Coordinates: (" + message + ")";
+    }, false);
+
+    drawCurvy();
+    
+    
+    ctx.translate(50,50);
+    ctx.scale(1.25,1.25);
+    ctx.rotate(30*Math.PI/180);
+    drawCurvy();
+    ctx.translate(55,55);
+    ctx.globalCompositeOperation="source-over";
+    drawCurvy2();
+    
+  
+    
+    function drawCurvy()
+    {
+        ctx.beginPath();
+        ctx.moveTo(100, 100);
+        ctx.quadraticCurveTo(200, 0, 300, 100);
+        ctx.quadraticCurveTo(200, 200, 100, 100);
+        ctx.lineWidth = 4;
+        ctx.closePath();
+        ctx.stroke();
+        var grd=ctx.createLinearGradient(150,100,400,140);
+        grd.addColorStop(0,"fbca30");
+        grd.addColorStop(1,"red");
+        ctx.fillStyle=grd;
+        ctx.fill();
+        ctx.shadowColor = 'black';
+        ctx.shadowBlur = 20;
+        ctx.shadowOffsetX = 10;
+        ctx.shadowOffsetY = 10;
+    }
+    
+    function drawCurvy2()
+    {
+        ctx.beginPath();
+        ctx.moveTo(100, 100);
+        ctx.quadraticCurveTo(200, 0, 300, 100)
+        ctx.quadraticCurveTo(200, 200, 100, 100);
+        ctx.lineWidth = 4;
+        ctx.closePath();
+        ctx.stroke();
+        var grd=ctx.createLinearGradient(150,100,400,140);
+        grd.addColorStop(0,"55fc32");
+        grd.addColorStop(1,"367728");
+        ctx.fillStyle=grd;
+        ctx.fill();
+        ctx.shadowColor = 'black';
+        ctx.shadowBlur = 20;
+        ctx.shadowOffsetX = 10;
+        ctx.shadowOffsetY = 10;
+    }
+    
+</script>
+
+<div id="message"></div>
+</body>
+</html>

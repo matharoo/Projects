@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drawing shapes in HTML5 Canvas, Rupinder Matharoo (9571923)</title>
+</head>
+<body>
+
+<canvas id="myCanvas" width="600" height="500" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    var radius = 30;
+    function getMousePos(canvas, evt) {
+    var rect = canvas.getBoundingClientRect();
+    return {
+      x: evt.clientX - rect.left,
+      y: evt.clientY - rect.top
+    };
+    }
+    
+    canvas.addEventListener('mousemove', function(evt) {
+    var mousePos = getMousePos(canvas, evt);
+    var message =  mousePos.x + ',' + mousePos.y;     
+    document.getElementById("message").innerHTML="Coordinates: (" + message + ")";
+    }, false);
+
+    //Drawing Shapes
+    drawTriangle();
+    drawSquare();
+    drawCircle();
+    drawBoat();
+    drawEyeshape();
+
+function drawTriangle()
+{
+    ctx.beginPath();
+    ctx.moveTo(50,100);
+    ctx.lineTo(100,50);
+    ctx.lineTo(150,100);
+    ctx.lineWidth = 2;
+    ctx.closePath();
+    ctx.stroke();
+    ctx.fillStyle = "yellow";
+    ctx.fill();
+    ctx.font = '14pt Calibri';
+    ctx.fillStyle = 'black';
+    ctx.fillText("Triangle", 70, 120);
+}
+
+function drawSquare()
+{
+    ctx.beginPath();
+    ctx.moveTo(250,50);
+    ctx.lineTo(250,100);
+    ctx.lineTo(300,100);
+    ctx.lineTo(300,50);
+    ctx.lineWidth = 2;
+    ctx.closePath();
+    ctx.stroke();
+    ctx.fillStyle = "cyan";
+    ctx.fill();
+    ctx.font = '12pt Verdana';
+    ctx.fillStyle = 'black';
+    ctx.fillText("Square", 250, 120);
+}
+
+function drawCircle(x,y,radius)
+{
+    ctx.beginPath();
+    ctx.arc(400,70,30,0,2*Math.PI);
+    ctx.stroke();
+    ctx.fillStyle = "orange";
+    ctx.fill();
+    ctx.font = '12pt Arial';
+    ctx.fillStyle = 'black';
+    ctx.fillText("Circle", 380, 120);
+}
+
+function clearMessage()
+{
+document.getElementById("message").innerHTML="";
+}
+
+    function drawBoat()
+    {
+        ctx.beginPath();
+        ctx.moveTo(50,400);
+        ctx.lineTo(125,400);
+        ctx.lineTo(125,300)
+        ctx.lineWidth = 2;
+        ctx.closePath();
+        ctx.stroke();
+        ctx.fillStyle = "yellow";
+        ctx.fill();
+        
+        ctx.beginPath();
+        ctx.moveTo(135,400);
+        ctx.lineTo(250,400);
+        ctx.lineTo(135,250)
+        ctx.lineWidth = 2;
+        ctx.closePath();
+        ctx.stroke();
+        ctx.fillStyle = "red";
+        ctx.fill();
+        
+        ctx.beginPath();
+        ctx.moveTo(130,410);
+        ctx.lineTo(130,245);
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        ctx.fillStyle = "black";
+        ctx.closePath();
+        
+        ctx.beginPath();
+        ctx.arc(130,240,5,0,2*Math.PI);
+        ctx.stroke();
+        ctx.fill(); 
+        ctx.closePath();
+        
+        ctx.beginPath();
+        ctx.moveTo(30,410);
+        ctx.lineTo(300,410);
+        ctx.lineTo(270,460);
+        ctx.lineTo(70,460);
+        ctx.lineTo(30,410)
+        ctx.lineWidth = 2;
+        ctx.closePath();
+        ctx.stroke();
+        ctx.fillStyle = "brown";
+        ctx.fill();
+        ctx.font = '8pt Verdana';
+        ctx.fillStyle = 'White';
+        ctx.fillText("Multimedia BOAT!", 55, 430);
+        
+    }
+    
+    
+    
+    
+</script>
+
+<div id="message"></div>
+</body>
+</html>
