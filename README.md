@@ -5,6 +5,7 @@ The projects I am working on and worked in past while learning application devel
 
 It includes the following programs:
 <br>
++ Solved Java Problems..<br>
 + Python Script for plotting graphs using Matlab Pyplot<br>
 + Google Markup Application using PHP,MySQL, HTML5 and JavaScript<br>
 + BB10 Applications<br>
