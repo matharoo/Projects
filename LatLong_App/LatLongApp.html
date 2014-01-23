@@ -46,14 +46,24 @@
             if($("#lat").val()!="" && $("#lng").val()!=""){
              $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?sensor=false&latlng='+latlng, function(jd) {
                 if(jd.status=="OK"){
-                    console.log(jd.results.length);
+                   // console.log(jd.results.length);
                     for(var i=0; i<jd.results.length; i++){
                     var addr= new String;
                     addr= jd.results[i].formatted_address;
                     //encoding the address value to concatenate into the link...
                     var links = "http://maps.google.com/?q="+encodeURIComponent(addr);
-                    //console.log(links);
+                    var country = "";
+                    var ctrcode = "";
+                        for(var j=0; j<jd.results[i].address_components.length; j++){
+                            if(jd.results[i].address_components[j].types[0] =="country")
+                            {
+                                country = jd.results[i].address_components[j].long_name;
+                                ctrcode = jd.results[i].address_components[j].short_name;
+                            }   
+                        }
                     $('#geo').append('<tr><td>Address: <a target="_blank" href='+links+'>' + jd.results[i].formatted_address +'</a>'+
+                                     '<br>Country: '+ country +
+                                     '<br>ISO Code: '+ ctrcode +
                                      '<br></td></tr>');
                      }
                  }
@@ -73,6 +83,7 @@
         
         $("#radgeo").click(function(){
             if($("#radgeo").is(":checked")){
+                $("#geo").find("tbody").remove();
                 $("#geocoding").show(500).fadeIn;
                 $("#reverse").hide(500).fadeIn;
             }
@@ -80,6 +91,7 @@
         
         $("#radrev").click(function(){
             if($("#radrev").is(":checked")){
+                $("#geo").find("tbody").remove();
                 $("#geocoding").hide(500).fadeIn;
                 $("#reverse").show(500).fadeIn;
             }
@@ -104,6 +116,7 @@
         <button id="clear1">Clear</button>
     </div>
     <div id="reverse" style="text-align:center;">
+        <div id="current"></div>
         <input type="text" id="lat" placeholder="Latitude">
         <input type="text" id="lng" placeholder="Longitude">
         <button id="getadd">Get Address</button>
