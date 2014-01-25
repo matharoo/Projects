@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<head><title>LatLong App by: Rupinder Matharoo</title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script type="text/javascript">
-    //Author: Rupinder Singh Matharoo 
-    //Dated: January 20,2014
-    // This small Application uses jQuery, JSON, and Google GeoCode API to get the Address Coordinates. The query if valid returns number of results with link and coordinates. App also allows you to reverse geocode the longitude and latitude values to give you the address suggestions returned by the Google geocode API.
-    $(document).ready(function(){
+//Author: Rupinder Singh Matharoo 
+//Dated: January 20,2014
+//App Extension Link: https://chrome.google.com/webstore/detail/latlong/aaclhojogkcakmjnadccbhpkkolcpaeh
+//Linkedin: http://ca.linkedin.com/in/matharoo/
+//Web: http://dreadbob.blogspot.com
+// This small Application uses jQuery, JSON, and Google GeoCode API to get the Address Coordinates. The query if valid returns number of results with link and coordinates. App also allows you to reverse geocode the longitude and latitude values to give you the address suggestions returned by the Google geocode API.
+$(document).ready(function(){
         //hide the menu when app starts..
         $("#geocoding").hide();
         $("#reverse").hide();
@@ -16,17 +15,18 @@
             if(add==""){
                 $('#geo').append('<tr><td>No string entered!!<br></td></tr>');
             }
-            else{
+            else{   
              $.getJSON('http://maps.google.com/maps/api/geocode/json?sensor=false&address='+add, function(jd) {
+                 $("#geo").append('<tr><th>Address</th> <th>Latitude</th><th>Longitude</th></tr>'); 
                 if(jd.status=="OK"){
                     for(var i=0; i<jd.results.length; i++){
                     var lat= jd.results[i].geometry.location.lat;
                     var lng= jd.results[i].geometry.location.lng;
                     var link = "http://maps.google.com/?q="+lat+","+lng;
-                    $('#geo').append('<tr><td>Address: <a target="_blank" href='+link+'>' + jd.results[i].formatted_address +'</a>'+ 
-                                     '<br>Latitude: ' + lat + 
-                                     '<br>Longitude: ' + lng +
-                                     '<br></td></tr>');
+                    $('#geo').append('<tr><td><a target="_blank" href='+link+'>' + jd.results[i].formatted_address +'</a></td>'+ 
+                                     '<td>' + lat + '</td>' + 
+                                     '<td>' + lng +'</td>' + 
+                                     '</tr>');
                      }
                  }
                  if(jd.status=="ZERO_RESULTS"){
@@ -45,6 +45,7 @@
             }
             if($("#lat").val()!="" && $("#lng").val()!=""){
              $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?sensor=false&latlng='+latlng, function(jd) {
+                 $("#geo").append('<tr><th>Approx. Address</th> <th>Country</th><th>ISO Code</th></tr>'); 
                 if(jd.status=="OK"){
                    // console.log(jd.results.length);
                     for(var i=0; i<jd.results.length; i++){
@@ -61,10 +62,10 @@
                                 ctrcode = jd.results[i].address_components[j].short_name;
                             }   
                         }
-                    $('#geo').append('<tr><td>Address: <a target="_blank" href='+links+'>' + jd.results[i].formatted_address +'</a>'+
-                                     '<br>Country: '+ country +
-                                     '<br>ISO Code: '+ ctrcode +
-                                     '<br></td></tr>');
+                    $('#geo').append('<tr><td><a target="_blank" href='+links+'>' + jd.results[i].formatted_address +'</a></td>'+
+                                     '<td>' + country + '</td>' +
+                                     '<td>'+ ctrcode + '</td>' +
+                                     '</tr>');
                      }
                  }
                  if(jd.status=="ZERO_RESULTS"){
@@ -98,35 +99,3 @@
         });
         
     });//End of main document ready function
-    </script>
-</head>
-<body>
-    <div id="headings" style="text-align:center; font-family:courier new;"><h1>LatLong App</h1>
-        <h5>Using jQuery, HTML5 & Google GeoCode API</h5>
-    </div>
-    <div style="text-align:center; font-family:courier new; font-weight:bold; font-size:14px">
-        <input type="radio" value="getgeo" name="type" id="radgeo" >
-        <label for="radgeo">Get Geocode</label>
-        <input type="radio" value="reverse" name="type" id="radrev" >
-        <label for="radrev">Reverse Geocode</label>
-    </div>
-    <div id="geocoding" style="text-align:center;">
-        <input type="text" id="add" placeholder="Enter Country or City or Address " size="35">
-        <button id="getgeo">Get GeoCodes</button>
-        <button id="clear1">Clear</button>
-    </div>
-    <div id="reverse" style="text-align:center;">
-        <div id="current"></div>
-        <input type="text" id="lat" placeholder="Latitude">
-        <input type="text" id="lng" placeholder="Longitude">
-        <button id="getadd">Get Address</button>
-        <button id="clear2">Clear</button>
-    </div>
-    
-    <table border="1" id="geo" style="width: 50%; margin: auto;"></table>
-    
-    <div id="headings" style="text-align:center; font-family:courier new;">
-        <h6>&copy; 2014 App by Rupinder Singh Matharoo</h6>
-    </div>
-</body>
-</html>
