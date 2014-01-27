@@ -9,9 +9,13 @@ It includes the following programs:
 + Python Script for plotting graphs using Matlab Pyplot<br>
 + Google Markup Application using PHP,MySQL, HTML5 and JavaScript<br>
 + LatLong Application using jQuery, Geocode API and HTML5<br>
++ HTML5 Canvas Animations<br>
 + BB10 Applications<br>
 + and more...
 <br>
 <br>
+
+Please feel free to contribute..
+
 Cheers<br>
 Rupinder :)
