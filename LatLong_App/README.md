@@ -1,4 +1,4 @@
-<h1>LatLong App</h2>
+<h1>LatLong App</h1>
 ========<br>
 Now available on Chrome Store @ <br>
 <h4>https://chrome.google.com/webstore/detail/latlong/aaclhojogkcakmjnadccbhpkkolcpaeh</h4>
