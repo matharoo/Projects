@@ -1,7 +1,7 @@
-LatLong App<br>
+<h1>LatLong App</h2>
 ========<br>
 Now available on Chrome Store @ <br>
-https://chrome.google.com/webstore/detail/latlong/aaclhojogkcakmjnadccbhpkkolcpaeh
+<h4>https://chrome.google.com/webstore/detail/latlong/aaclhojogkcakmjnadccbhpkkolcpaeh</h4>
 <br><br>
 LatLong is an application to convert addresses into Geographic coordinates and also convert the coordinates to addresses.
 FEATURES:<br>
